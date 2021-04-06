@@ -18,7 +18,7 @@ class CreateEmployeesTable extends Migration
             $table->string('name');
             $table->string('occupation');
             $table->text('bio');
-            $table->text('photo')->default('no-image.png');
+            $table->text('photo')->nullable();
             $table->string('email');
             $table->string('social_media');
             $table->bigInteger('company_id')->unsigned();

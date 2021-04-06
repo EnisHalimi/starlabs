@@ -16,7 +16,7 @@ class CreateCompaniesTable extends Migration
         Schema::create('companies', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->text('logo')->default('no-image.png');
+            $table->text('logo')->nullable();
             $table->string('banner');
             $table->string('website');
             $table->string('quality1');
